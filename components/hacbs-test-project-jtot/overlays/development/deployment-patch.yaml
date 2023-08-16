@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-jtot
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-dshq-tenant/rhtap-demo-app/hacbs-test-project-jtot@sha256:bee809896bfc303f5703619ad009b1f5e65e25ab08e51de909c8422bd0df8dc6
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
